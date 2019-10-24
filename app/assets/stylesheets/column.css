@@ -1,0 +1,18 @@
+.boardColumn {
+  width: 100%;
+  height: fill;
+  border: 1px solid #000000;
+}
+
+.title {
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #000000;
+}
+
+.columnContainer {
+  display: flex;
+  width: 100%;
+}

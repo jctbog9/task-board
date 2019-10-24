@@ -1,7 +1,14 @@
 import React from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-export const App = (props) => {
-  return (<h1>Make It So React</h1>)
+import Board from './Board'
+
+export const App = props => {
+  return (
+    <Router>
+      <Route exact path="/" component={Board} />
+    </Router>
+  )
 }
 
 export default App
