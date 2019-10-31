@@ -7,7 +7,7 @@ function Board() {
   const [rows, setRows] = useState([
     <Column title="ToDo" />,
     <Column title="In Process" />,
-    <Column title="Done" tasks={[<Task />]} />
+    <Column title="Done" />
   ])
 
   return (
