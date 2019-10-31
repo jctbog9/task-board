@@ -7,4 +7,16 @@ FactoryBot.define do
     password_confirmation { 'password' }
   end
 
+  factory :project do
+    title { "Test Project" }
+    description { "Test project's description" }
+  end
+
+  factory :column do
+    title { "Test Project" }
+  end
+
+  factory :task do
+    body { "Task Body!" }
+  end
 end

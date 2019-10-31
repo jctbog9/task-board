@@ -25,12 +25,13 @@ ActiveRecord::Schema.define(version: 2019_10_24_224713) do
 
   create_table "projects", force: :cascade do |t|
     t.string "title", null: false
-    t.string "desctription"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "tasks", force: :cascade do |t|
+    t.string "body"
     t.bigint "project_id"
     t.bigint "column_id"
     t.datetime "created_at", null: false
