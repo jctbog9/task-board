@@ -24,8 +24,7 @@ function NewTask({ handleSetTasks }) {
     <div>
       {displayForm ? (
         <form onSubmit={handleFormSubmit}>
-          <textarea wrap="hard" className="textBox" onChange={handleFormChange} value={formPayload}>
-          </textarea>
+          <textarea wrap="hard" className="textBox" onChange={handleFormChange} value={formPayload}/>
           <button className="button" type="submit">Submit</button>
           <button className="button" onClick={handleShowForm}>Close</button>
         </form>
